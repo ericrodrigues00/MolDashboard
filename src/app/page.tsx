@@ -40,15 +40,10 @@ interface PieData {
 
 type EditionKey = 'edicao1' | 'edicao2' | 'edicao3';
 
-interface DataCollections {
-  genderData: Record<EditionKey, GenderData[]>;
-  ageData: Record<EditionKey, AgeData[]>;
-  educationData: Record<EditionKey, EducationData[]>;
-  pieData: Record<EditionKey, PieData[]>;
-}
+
 
 const Dashboard: React.FC = () => {
-  const [activeTab] = useState('demografico');
+  
 
   // Cores para os gráficos de pizza
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8', '#82CA9D'];
