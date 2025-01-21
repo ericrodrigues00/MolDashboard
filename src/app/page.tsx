@@ -1,6 +1,5 @@
 'use client';
 
-import React, { useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell } from 'recharts';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -43,7 +42,6 @@ type EditionKey = 'edicao1' | 'edicao2' | 'edicao3';
 
 
 const Dashboard: React.FC = () => {
-  
 
   // Cores para os gráficos de pizza
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8', '#82CA9D'];
